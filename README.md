@@ -22,7 +22,7 @@ The idea behind this project was to provide a user-friendly breakdown of the res
 
 I used Figma to create a simple conceptual design of the website to see the breakdown of the single-page. Each section was detailed differently to reflect how I wanted each of the resume sections to be presented to the user. This also helped me find out what features I needed.
 
-<img width="834" alt="figma-b w" src="">
+<img width="834" alt="figma-b w" src="https://github.com/karinzaki/Portfolio/blob/main/src/images/figma.png">
 
 # :bulb: FEATURES TO BE ADDED IN
 - With additional time, I would like to work out how to require/import a PDF into the download links using React JS to allow the user to download a PDF version of the resume rather than an image copy.
