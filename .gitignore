@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# extra working file
+src/containers/AboutContainer
+src/containers/ContactContainer
+src/components/HeaderImageComponent
+src/containers/Main.js

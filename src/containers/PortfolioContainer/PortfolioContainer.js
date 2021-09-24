@@ -1,0 +1,57 @@
+import React from "react"
+import PortfolioComponent from "../../components/PortfolioComponent/PortfolioComponent"
+import PortfolioFilterComponent from "../../components/PortfolioFilterComponent/PortfolioFilterComponent"
+import { projectsData, portfolioList, portfolioSection } from "../../portfolioData"
+import "./PortfolioContainer.css"
+
+export default function PortfolioContainer() {
+  const projects = projectsData.map((item) => {
+    return (
+      <PortfolioComponent
+        key={item.id}
+        liveDemo={item.liveDemo}
+        projectName={item.projectName}
+        imgURL={item.imgURL}
+        project__info={item.project__info}
+        liveDemoText={item.liveDemoText}
+        sourceCodeText={item.sourceCodeText}
+        sourceURL={item.sourceURL}
+        filter__word={item.filter__word}
+      />
+    )
+  })
+
+  const filterList = portfolioList.map((item) => {
+    return (
+      <PortfolioFilterComponent
+        key={item.id}
+        filtering={item.filtering}
+        list__word={item.list__word}
+        active={item.active}
+      />
+    )
+  })
+
+  return (
+    <section
+      className="portfolio custom__background text-center custom__outline"
+      id={portfolioSection.title}
+    >
+      <div className="container">
+        <h2
+          className="h2__style custom__underline mb-5"
+          data-title={portfolioSection.title}
+        >
+          {portfolioSection.title}
+        </h2>
+        <p className="text-left">{portfolioSection.paragraph}</p>
+        <ul className="gallery__list mb-5">
+          {filterList}
+        </ul>
+        <section className="card-holder pf-row justify-content-md-center justify-content-lg-start align-items-center">
+          {projects}
+        </section>
+      </div>
+    </section>
+  )
+}

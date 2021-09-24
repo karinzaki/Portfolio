@@ -1,0 +1,44 @@
+.portfolio {
+  padding-top: 4rem;
+  padding-bottom: .1rem;
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  margin-left: 15px;
+  margin-right: 15px;
+  color: var(--text-color);
+}
+
+.gallery__list {
+  margin-top: 25px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.gallery__list li {
+  display: inline;
+  padding-left: 8px;
+}
+
+@media (min-width: 768px) {
+  .justify-content-md-center {
+      justify-content: center!important;
+  }
+}
+
+.align-items-center {
+  align-items: center!important;
+}
+
+.pf-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}

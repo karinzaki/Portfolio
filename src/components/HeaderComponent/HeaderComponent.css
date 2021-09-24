@@ -1,0 +1,71 @@
+.header-info .main-p,
+.header-info a {
+    line-height: 2.25rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.header-info .about-me {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 320;
+    width: 25rem;
+}
+
+@media only screen and (max-width: 576px) {
+    .header-info a {
+        font-size: var(--font-size-info, 1.35rem);
+    }
+}
+
+.header-info h1,
+.header-info .main-p,
+.header-info a,
+.header-info .custom__button,
+.header-info .about-me {
+    color: var(--text-color);
+}
+
+.header-info h1 {
+    font-family: "Sans Serif";
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+.header-info .custom__button {
+    position: relative;
+    z-index: 1;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-weight: 350;
+    margin-top: 1.7rem;
+    margin-bottom: 1.7rem;
+    margin-left: 1.7rem;
+}
+  
+.header-info .custom__button:hover {
+    color: rgb(73, 69, 69);
+    border: 1px solid rgb(102, 97, 97);
+}
+
+.header-info a {
+    text-decoration: none;
+}
+
+.header-info {
+    border: 1px grey;
+}
+
+.header__social {
+    margin-top: 2rem;
+    width: 18rem;
+    height: 1.4rem;
+    margin-right: 0.3rem;
+    margin-left: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

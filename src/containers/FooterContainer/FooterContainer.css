@@ -1,0 +1,25 @@
+.copyright {
+  color: var(--text-color);
+  margin-bottom: 0;
+}
+
+.footer-container {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  border-top-left-radius: 4rem;
+  background: linear-gradient(
+    360deg,
+    /* #3E5151 0%,
+    #DECBA4 91% */
+
+    #F2F2F2 0%,
+    #DBDBDB 50%,
+    #ADA996 100%
+  );
+}
+
+.socials, .copyright {
+  display: flex;
+  justify-content: right;
+}

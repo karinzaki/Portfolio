@@ -1,0 +1,65 @@
+.skill__name {
+  font-size: 1.5rem;
+}
+
+.skills__container {
+  /* color: white; */
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.skills__container li {
+  list-style-type: none;
+}
+
+.skills__container ul {
+  padding: 2px 10px 2px 20px;
+}
+
+/* create shadow on hover */
+.skills__container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.skills__container::before {
+  background: linear-gradient(135deg, #F2F2F2 25%, #fff 75%);
+  /* transition: all 0.5s ease; */
+  /* transform: translate(-15%, -15%);  */
+  content: "";
+  position: absolute;
+  display: block;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  border-top: 1px solid #949180;
+  border-left: 15px solid #949180;
+}
+
+.skills__container:hover::before {
+  transform: translate(-25%, -25%) rotate(-180deg);
+} 
+
+/* .side-bar {
+  width: 100px;
+  height: auto;
+  background-color: black;
+  float: left;
+} */
+
+/* swap the edge colors */
+.skills__container > li {
+  color: var(--text-color);
+  background: white;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .skills__container > ul {
+    font-size: 1.2rem;
+  }
+}
